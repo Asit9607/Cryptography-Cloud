@@ -1,8 +1,0 @@
-Compile and run your Java program.
-Ensure your bucket name, file path, and region are correctly set in the code.
-5. Verify the Upload
-Log in to your AWS S3 Console.
-Navigate to your bucket to check if the file has been uploaded successfully.
-6. Handle Errors and Exceptions
-If you encounter any issues, review the error message and ensure your AWS credentials and bucket configurations are correct.
-Make sure the AWS user has s3:PutO
