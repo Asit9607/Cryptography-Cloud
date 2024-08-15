@@ -15,13 +15,6 @@ app.get("/assets/style.css", function(req, res) {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// const connection = mysql.createConnection({
-//     host: "localhost",
-//     user: "root",
-//     password: "anu@210904",
-//     database: "login_signup"
-// });
-
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
