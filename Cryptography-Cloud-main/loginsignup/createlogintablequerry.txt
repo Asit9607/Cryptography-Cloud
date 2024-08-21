@@ -1,0 +1,11 @@
+create database login_signup;
+use login_signup;
+create table if not exists userdetails(
+	user_name varchar(255) not null primary key ,
+    user_pass varchar(255)
+    );
+select * from login_signup.userdetails;
+
+insert into userdetails(user_name,user_pass) values("asitanand75@gmail.com","PASSWORD1");
+insert into userdetails(user_name,user_pass) values("AbhiWahane75@gmail.com","12345678");
+insert into userdetails(user_name,user_pass) values("durvaajgaonkar@gmail.com","12345678");

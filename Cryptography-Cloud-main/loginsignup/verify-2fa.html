@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Verification</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Two-Factor Authentication</h1>
+        <form action="/verify-2fa" method="post">
+            <label for="token">Enter the 2FA Code:</label>
+            <input type="text" id="token" name="token" required>
+            <button type="submit">Verify Code</button>
+        </form>
+        <p id="error-message">
+            <!-- This paragraph will be used to display any error messages -->
+            <script>
+                // Display error message if any
+                const urlParams = new URLSearchParams(window.location.search);
+                const error = urlParams.get('error');
+                if (error) {
+                    document.getElementById('error-message').innerText = error;
+                }
+            </script>
+        </p>
+    </div>
+</body>
+</html>
